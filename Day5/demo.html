@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Example of DOM with JS</title>
+</head>
+<body>
+    <!-- <h1 id="hid1">This is first heading</h1>
+    <h2 id="hid2">This is second heading</h2>
+    <button id="bid1">click</button>
+    <button id="bid2">click</button>
+    <button id="bid3">yellow</button>
+    <button id="bid4">blue</button>
+    <button id="bid5">green</button>
+    <button id="bid6">background</button> -->
+    <form id="f1" align="center">
+        <input id="username" type="text" placeholder="Enter Name"><br><br>
+        <input id="password" type="password" placeholder="Enter password"><br><br>
+        <button type="submit">Submit</button>
+        <p style="color: red; " id="p1"></p>
+    </form>
+
+    <script>
+        document.getElementById("f1").addEventListener("submit",(e)=>{
+e.preventDefault();
+let a=document.getElementById("username").value;
+let error=document.getElementById("p1");
+if(a==""){
+    error.innerHTML="Value cannot be empty";
+}
+else{
+error.style.color="green";
+error.innerHTML="Form Submitted Successfully";
+}
+        });
+        // document.getElementById("bid1").addEventListener("click",function(){
+        //     document.getElementById("hid1").innerHTML='change caption1';
+        //     document.getElementById("hid2").innerHTML="change caption2";
+        // });
+        // document.getElementById("bid2").addEventListener("click",function(){
+        //     document.getElementById("hid1").style.color='blue';
+        //     document.getElementById("hid2").style.color="yellow";
+        // });
+        // document.getElementById("bid3").addEventListener("click",function(){
+        //     document.getElementById("hid1").style.color='yellow';
+        //     document.getElementById("hid2").style.color="yellow";
+        // });
+        // document.getElementById("bid4").addEventListener("click",function(){
+        //     document.getElementById("hid1").style.color='blue';
+        //     document.getElementById("hid2").style.color="blue";
+        // });
+        // document.getElementById("bid5").addEventListener("click",function(){
+        //     document.getElementById("hid1").style.color='green';
+        //     document.getElementById("hid2").style.color="green";
+        // });
+        // document.getElementById("bid6").addEventListener("click",function(){
+        //     document.body.style.backgroundColor='yellow';
+        // });
+//         function fun(){
+// document.getElementById("hid1").innerHTML='Hello';
+//         }
+//         function fun2(){
+//             document.getElementById("hid2").innerHTML='Rabiul'
+//         }
+
+
+
+    </script>
+    
+</body>
+</html>
