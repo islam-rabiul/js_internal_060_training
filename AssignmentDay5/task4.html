@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid1">Welcome to JavaScript</p>
+    <br>
+    <button id="bid1">hide</button>
+    <button id="bid2">show</button>
+    <script>
+        document.getElementById("bid1").addEventListener("click",()=>{
+            document.getElementById("pid1").style.display='none';
+        })
+        document.getElementById("bid2").addEventListener("click",()=>{
+            document.getElementById("pid1").style.display='block';
+        })
+    </script>
+</body>
+</html>

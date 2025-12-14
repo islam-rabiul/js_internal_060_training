@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bid1">red</button>
+    <button id="bid2">blue</button>
+    <button id="bid3">green</button>
+    <script>
+        document.getElementById("bid1").addEventListener("click",()=>{
+            document.body.style.backgroundColor='red';
+        })
+         document.getElementById("bid2").addEventListener("click",()=>{
+            document.body.style.backgroundColor='blue';
+        })
+         document.getElementById("bid3").addEventListener("click",()=>{
+            document.body.style.backgroundColor='green';
+        })
+    </script>
+</body>
+</html>
