@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id1" placeholder="Enter your task">
+    <button id="bid1">Add Task</button>
+    <ul id="uid1"></ul>
+    <script>
+        document.getElementById("bid1").addEventListener("click",()=>{
+            let a=document.getElementById("id1").value;
+            let l=document.createElement("li");
+            l.innerText=a;
+            document.getElementById("uid1").appendChild(l);
+        })
+    </script>
+</body>
+</html>

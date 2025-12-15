@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bid1">toggle</button>
+    <script>
+        let a=document.body.style.backgroundColor='black';
+
+        let b=document.body.style.backgroundColor='white';
+
+        let toggle=false;
+        document.getElementById("bid1").addEventListener("click",()=>{
+            if(toggle){
+                document.body.style.backgroundColor='black';
+                
+            }
+            else{
+                document.body.style.backgroundColor='white';
+            }
+            toggle=!toggle;
+            
+        })
+    </script>
+</body>
+</html>

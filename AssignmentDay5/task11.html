@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bid1">Click</button>
+    <h1 id="clock1">00:00:00</h1>
+    <script>
+         
+        document.getElementById("bid1").addEventListener("click",()=>{
+           setInterval(()=>{
+        const now=new Date();
+        let hours=now.getHours();
+        let minutes=now.getMinutes();
+        let second=now.getSeconds();
+document.getElementById("clock1").innerText=hours +":" + minutes + ":" + second;
+          
+            },1000);
+              });
+            
+        
+    </script>
+</body>
+</html>
